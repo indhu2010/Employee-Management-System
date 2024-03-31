@@ -1,8 +1,11 @@
 Project Description:
-The project demonstrated the process of building a robust employee management system using modern web technologies such as React and Node.js.
-Through the integration of MySQL database, Axios for data transmission, JWT for authentication, and React for frontend development, a fully functional system was developed.
-Features such as CRUD operations on employee records and categories, image uploading, and dashboard summary provided comprehensive management capabilities.
-This project serves as a practical example for developers looking to build similar systems and showcases the power and flexibility of React and Node.js in web application development.
+1)The project demonstrated the process of building a robust employee management system using modern web technologies such as React and Node.js.
+
+2) Through the integration of MySQL database, Axios for data transmission, JWT for authentication, and React for frontend development, a fully functional system was developed.
+
+3) Features such as CRUD operations on employee records and categories, image uploading, and dashboard summary provided comprehensive management capabilities.
+
+4) This project serves as a practical example for developers looking to build similar systems and showcases the power and flexibility of React and Node.js in web application development.
 
 
 Tools and technologies:
