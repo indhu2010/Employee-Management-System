@@ -19,18 +19,18 @@ Tools and technologies:
 
 •	Hash functions: Used for encrypting sensitive data such as passwords.
 
-# Home Page:
+## Home Page:
 
 ![Screenshot 2024-03-31 222307](https://github.com/indhu2010/Employee-Management-System/assets/123257572/fc31343f-8057-4ed4-ae33-7063b16b93ff)
 
 
-# Login Page:
+## Login Page:
 ![Screenshot 2024-03-30 185859](https://github.com/indhu2010/Employee-Management-System/assets/123257572/313ac086-ba59-4c48-90ef-3d4dc983efb6)
 
-# Dashboard && category Section:
+## Dashboard && category Section:
 ![Screenshot 2024-03-31 221453](https://github.com/indhu2010/Employee-Management-System/assets/123257572/b821fbcf-6f0c-4ec3-bdfe-2f6823a0d4fe)
 
-# Employee Section:
+## Employee Section:
 ![Screenshot 2024-03-31 221521](https://github.com/indhu2010/Employee-Management-System/assets/123257572/bab42c27-0df5-499e-8ffc-aa8a78cf9d8a)
 
-
+// "I am still working on it and will complete it soon. Thank you for your time."
