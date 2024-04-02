@@ -1,18 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const AddEmployee = () => {
   const [employee, setEmployee] = useState({
-    name: "",
-    email: "",
-    password: "",
-    salary: "",
-    address: "",
-    category_id: "",
-    image: "",
+    name: '',
+    email: '',
+    password: '',
+    salary: '',
+    address: '',
+    category_id: '',
+    image: '',
   });
 
   const [category, setCategory] = useState([]);
+  const navigate = useNavigate()
 
   useEffect(() => {
     axios
@@ -29,8 +32,27 @@ const AddEmployee = () => {
 
   const  handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:3000/auth/add_employee', employee)
-    .then(result => console.log(result.data))
+    const formData = new FormData();
+    formData.append('name',employee.name);
+    formData.append('email', employee.email);
+    formData.append('password', employee.password);
+    formData.append('address', employee.address);
+    formData.append('salary', employee.salary);
+    formData.append('image', employee.image);
+    formData.append('category_id', employee.category_id);
+    
+
+
+
+    axios.post('http://localhost:3000/auth/add_employee', formData)
+    .then(result => {
+      if(result.data.Status){
+        navigate('/dashboard/employee')
+      }
+      else{
+        alert(result.data.Error)
+      }
+    })
     .catch(err => console.log(err))
   }
 
@@ -40,6 +62,7 @@ const AddEmployee = () => {
         <h3 className="text-center">Add Employee</h3>
 
         <form className="row g-1" onSubmit={handleSubmit} >
+          
           <div className="col-12">
             <label for="inputName" className="form-label">
               Name
@@ -120,8 +143,8 @@ const AddEmployee = () => {
             <label for="category" className="form-label">
               Category
             </label>
-            <select name="category" id="category" className="form-select">
-            onChange={(e) => setEmployee({...employee , category_id:  e.target.value})}
+            <select name="category" id="category" className="form-select"
+            onChange={(e) => setEmployee({...employee , category_id:  e.target.value})}>
               {category.map((c) => {
                 return <option value={c.id}>{c.name} </option>;
               })}

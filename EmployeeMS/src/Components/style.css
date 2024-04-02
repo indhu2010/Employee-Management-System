@@ -10,3 +10,13 @@
     background-color: #05102097;
     color:white;
 }
+
+ul li :hover{
+    background-color: rgb(91, 136, 218);
+}
+
+.employee_image{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
