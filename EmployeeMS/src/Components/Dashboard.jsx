@@ -1,10 +1,27 @@
 import React from "react"
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, useNavigate } from "react-router-dom"
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import axios from "axios";
 
 
 const Dashboard = () => {
+  const navigate = useNavigate()
+ 
+  axios.defaults.withCredentials =true
+
+  const handleLogout = ()=>{
+    axios.get('http://localhost:3000/auth/logout')
+    .then(result =>{
+      if(result.data.Status){
+        navigate('/adminlogin')
+      }
+    })
+    .catch(error => {
+      console.error('Logout failed:', error);
+      // Handle the error here, such as showing an error message to the user.
+    });
+  }
   return (
     <div className="container-fluid">
       <div className="row flex-nowrap">
@@ -71,7 +88,7 @@ const Dashboard = () => {
               </li>
 
 
-              <li className="w-100">
+              <li className="w-100" onClick={handleLogout}>
               <Link
                   className="nav-link px-0 align-middle text-white"
                 >

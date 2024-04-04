@@ -148,6 +148,7 @@ const AddEmployee = () => {
               {category.map((c) => {
                 return <option value={c.id}>{c.name} </option>;
               })}
+              
             </select>
           </div>
 
