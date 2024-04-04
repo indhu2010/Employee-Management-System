@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 # Employee-Management-System
 
-Tools and technologies :
-=======
+
  ##  Project Description:
 
 1)The project demonstrated the process of building a robust employee management system using modern web technologies such as React and Node.js.
@@ -15,7 +14,7 @@ Tools and technologies :
 
 
 Tools and technologies:
-
+=======
 
 •	React: JavaScript library for building user interfaces.
 
