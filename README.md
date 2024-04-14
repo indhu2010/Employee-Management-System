@@ -46,4 +46,4 @@ Tools and technologies:
 ## Employee Section:
 ![Screenshot 2024-03-31 221521](https://github.com/indhu2010/Employee-Management-System/assets/123257572/bab42c27-0df5-499e-8ffc-aa8a78cf9d8a)
 
-// "I am still working on it and will complete it soon. Thank you for your time."
+// " Thank you for having your valuable time."
